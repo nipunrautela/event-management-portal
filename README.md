@@ -1,4 +1,4 @@
-# Event Mangemnent Portal
+# Event Mangement Portal
 
 ## How to run
 1. clone the repo or download as zip.

@@ -56,7 +56,7 @@ app.get("/login", function (req, res) {
 
 app.post("/login", function (req, res) {
   if (req.body.username) {
-    let user = new User(req.body.username);
+    let user = new User(conn, req.body.username);
     res.cookie("ems-id", user.id);
     console.log(user, user.id);
     res.redirect("/event");
@@ -88,6 +88,9 @@ app.get("/event", function (req, res) {
 });
 
 app.get("/event/:userid", function (req, res) {
+  let userId = req.params.userid;
+  // use userid to find events registered by the user
+  // let user = new User(userId);
   res.send();
 });
 

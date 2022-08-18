@@ -9,7 +9,7 @@ class User {
 
   __id() {
     this.conn.query(
-      `SELECT id FROM users WHERE username=${this.name}`,
+      `SELECT id FROM users WHERE username="${this.name}"`,
       function (err, result) {
         if (err) throw err;
         if (result) this.id = result[0]["id"];
@@ -26,6 +26,10 @@ class User {
         console.log(result);
       }
     );
+  }
+
+  update() {
+    // update the details of the user as given in the class data members
   }
 
   register(eventId) {
