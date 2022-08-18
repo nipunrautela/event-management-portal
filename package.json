@@ -1,0 +1,25 @@
+{
+  "name": "event-management-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nipunrautela/event-management-portal.git"
+  },
+  "author": "Nipun Rautela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nipunrautela/event-management-portal/issues"
+  },
+  "homepage": "https://github.com/nipunrautela/event-management-portal#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1"
+  }
+}
